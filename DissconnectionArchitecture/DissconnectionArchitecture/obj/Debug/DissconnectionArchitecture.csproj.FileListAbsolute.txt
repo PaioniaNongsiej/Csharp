@@ -1,0 +1,7 @@
+C:\Users\paionian\Desktop\paionia\DissconnectionArchitecture\DissconnectionArchitecture\bin\Debug\DissconnectionArchitecture.exe.config
+C:\Users\paionian\Desktop\paionia\DissconnectionArchitecture\DissconnectionArchitecture\bin\Debug\DissconnectionArchitecture.exe
+C:\Users\paionian\Desktop\paionia\DissconnectionArchitecture\DissconnectionArchitecture\bin\Debug\DissconnectionArchitecture.pdb
+C:\Users\paionian\Desktop\paionia\DissconnectionArchitecture\DissconnectionArchitecture\obj\Debug\DissconnectionArchitecture.csproj.AssemblyReference.cache
+C:\Users\paionian\Desktop\paionia\DissconnectionArchitecture\DissconnectionArchitecture\obj\Debug\DissconnectionArchitecture.csproj.CoreCompileInputs.cache
+C:\Users\paionian\Desktop\paionia\DissconnectionArchitecture\DissconnectionArchitecture\obj\Debug\DissconnectionArchitecture.exe
+C:\Users\paionian\Desktop\paionia\DissconnectionArchitecture\DissconnectionArchitecture\obj\Debug\DissconnectionArchitecture.pdb
