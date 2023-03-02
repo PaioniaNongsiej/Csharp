@@ -1,0 +1,7 @@
+C:\Users\paionian\Desktop\paionia\sqldemo\sqldemo\bin\Debug\sqldemo.exe.config
+C:\Users\paionian\Desktop\paionia\sqldemo\sqldemo\bin\Debug\sqldemo.exe
+C:\Users\paionian\Desktop\paionia\sqldemo\sqldemo\bin\Debug\sqldemo.pdb
+C:\Users\paionian\Desktop\paionia\sqldemo\sqldemo\obj\Debug\sqldemo.csproj.AssemblyReference.cache
+C:\Users\paionian\Desktop\paionia\sqldemo\sqldemo\obj\Debug\sqldemo.csproj.CoreCompileInputs.cache
+C:\Users\paionian\Desktop\paionia\sqldemo\sqldemo\obj\Debug\sqldemo.exe
+C:\Users\paionian\Desktop\paionia\sqldemo\sqldemo\obj\Debug\sqldemo.pdb
