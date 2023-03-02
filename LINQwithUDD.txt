@@ -1,0 +1,117 @@
+class Student
+
+    {
+
+        public int Id { get; set; }
+
+        public string Name { get; set; }
+
+        public string Email { get; set; }
+
+        public int Age { get; set; }         //let us populate some data         public static List<Student> GetStudentData()
+
+        {
+
+            List<Student> stdlist = new List<Student>()
+
+            {
+
+                (new Student{ Id=101,Name="Jayanth",Email="Jayanth@abc.com",Age=21}),
+
+                (new Student{ Id=102,Name="Harish",Email="harish@gmail.com",Age=20}),
+
+                (new Student{ Id=103,Name="Jonah",Email="Js@abc.com",Age=13}),
+
+                (new Student{ Id=104,Name="Kailash",Email="kailash@xyz.com",Age=17}),
+
+                (new Student{ Id=105,Name="Janani",Email="Janani@abc.com",Age=15}),
+
+            };
+
+            return stdlist;
+
+        }     }
+
+    class Program
+
+    {
+
+        static void Main(string[] args)
+
+        {
+
+            string[] colors = { "Red", "Blue", "Yellow", "Black", "White", "Green" ,"Orange"};             //using query syntax             //query formation
+
+            var queryresult = from c in colors
+
+                              where c.StartsWith("B")
+
+                              //where c.Contains('a')
+
+                              //where c.EndsWith("e")
+
+                              select c;             //query Exceution             foreach(string s in queryresult)
+
+            {
+
+                Console.WriteLine(s);
+
+            }             int[] numbers = { 7, 5, 99, 45, 56, 73 };             var res = from n in numbers
+
+                      where n > 50
+
+                      orderby n
+
+                      select n;             foreach(var v in res)
+
+            {
+
+                Console.WriteLine(v);
+
+            }             int[] numbers2 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };             var oddnums = from num in numbers2
+
+                          where (num % 2)!= 0
+
+                          select num;             foreach(int n in oddnums)
+
+            {
+
+                Console.WriteLine(n);
+
+            }             //Linq queries with UDD
+
+            Console.WriteLine("-----LINQ with UDD-------");             IEnumerable<Student> jobj = from stud in Student.GetStudentData()
+
+                                         where stud.Name.StartsWith("J")
+
+                                         select stud; 
+
+            IEnumerable<string> jnames = from stud in Student.GetStudentData()
+
+                                          where stud.Name.StartsWith("J")
+
+                                          select stud.Name;            
+
+            foreach (Student s in jobj)
+
+            {
+
+                Console.WriteLine(s.Id+ " "+ s.Name+ " " +s.Email+ " "+ s.Age);
+
+            }             foreach (string s in jnames)
+
+            {
+
+                Console.WriteLine(s);
+
+            }             //Method Syntax to find all teenaged students             var teenagestuds = Student.GetStudentData().Where(s => s.Age > 12 && s.Age < 20).ToList<Student>();             foreach(var s in teenagestuds)
+
+            {
+
+                Console.WriteLine(s.Id + " "+s.Name+ " "+s.Email + " "+s.Age);
+
+            }
+
+            Console.Read();         }
+
+    }
